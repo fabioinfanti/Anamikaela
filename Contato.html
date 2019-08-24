@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>Ana Mikaela - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row" tag="cabecalho">
+      <div class="col-1">
+        <div id="mySidenav" class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="#">Retratos</a>
+          <a href="#">Urbanos</a>
+          <a href="#">Contato</a>
+          <a href="Sobre Mim.html">Sobre Mim</a>
+        </div>
+        <div id="main" style="margin-left: 0px; display: block; position: relative; right: 0px; color: white;z-index:99999">
+          <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav();myFunction(this)">&#9776;</span> -->
+
+          <div class="btn-menu" onclick="toggleNav(this);">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <script>
+          function toggleNav(x) {
+            document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
+            document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
+            x.classList.toggle("change");
+          }
+        </script>
+      </div>
+      <div class="col-10">
+        <div class="logo">
+          <a href="index.html">
+          <img src="image/logo.png" alt="Ana Mikaela">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <form action=""></form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

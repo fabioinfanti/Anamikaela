@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Sobre Mim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav" style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background-color: #333;"> 
+    <div class="container">
+        <div class="row" tag="cabecalho">
+          <div class="col-1">
+            <div id="mySidenav" class="sidenav">
+              <a href="index.html">Home</a>
+              <a href="#">Retratos</a>
+              <a href="#">Urbanos</a>
+              <a href="#">Contato</a>
+              <a href="Sobre Mim.html">Sobre Mim</a>
+            </div>
+            <div id="main"
+              style="margin-left: 0px; display: block; position: relative; left: 150px; color: white;z-index:99999">
+              <div class="btn-menu" onclick="toggleNav(this);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <script>
+              function toggleNav(x) {
+                document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
+                document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
+                x.classList.toggle("change");
+              }
+            </script>
+          </div>
+          <div class="col-10">
+            <div class="logo">
+              <a href="index.html">
+              <img src="image/logo.png" alt="Ana Mikaela">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="container" style="position: relative; top: 100px;">
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-6">
+            <div style="position: relative;">
+              <img src="image/imagem-mika.jpg" alt="Sobre mim" class="imagem-mika">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="texto">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tincidunt ipsum. Integer pharetra metus ut ante laoreet, ac ullamcorper libero ultrices. Suspendisse vulputate nulla vel urna lobortis aliquet. Aliquam ornare ultricies ornare. Praesent in sollicitudin arcu, sit amet gravida sapien. Integer eu massa a quam bibendum varius. Morbi augue risus, porttitor nec tempor id, iaculis vehicula ex. Integer efficitur sit amet tellus quis condimentum. Vivamus iaculis, tellus et feugiat efficitur, augue arcu malesuada justo, a efficitur velit sem a nibh.</p>
+              <br>
+              <p>Nam ornare odio in urna vehicula, eget fringilla est luctus. Proin interdum sapien consequat est vulputate pulvinar. Nunc lacinia viverra purus ac aliquet. Maecenas dolor dolor, hendrerit eu posuere at, cursus sit amet elit. Donec lorem ex, volutpat vel ipsum accumsan, venenatis volutpat sapien. Quisque sed magna at ipsum porta semper vitae nec leo. Vestibulum consectetur nibh lectus, quis convallis enim dapibus sed. Quisque vel dolor blandit, laoreet quam tempus, convallis augue. Etiam pellentesque est quis lorem sagittis sollicitudin. In ullamcorper purus quis risus gravida egestas. Etiam ut eleifend felis, quis feugiat nibh. Aenean semper ornare urna, in cursus lectus convallis in. Nulla dignissim interdum arcu et gravida.</p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
