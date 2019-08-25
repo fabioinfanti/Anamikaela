@@ -19,10 +19,11 @@
           <a href="index.html">Home</a>
           <a href="#">Retratos</a>
           <a href="#">Urbanos</a>
-          <a href="#">Contato</a>
+          <a href="Contato.html">Contato</a>
           <a href="Sobre Mim.html">Sobre Mim</a>
         </div>
-        <div id="main" style="margin-left: 0px; display: block; position: relative; right: 0px; color: white;z-index:99999">
+        <div id="main"
+          style="margin-left: 0px; display: block; position: relative; right: 0px; color: white;z-index:99999">
           <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav();myFunction(this)">&#9776;</span> -->
 
           <div class="btn-menu" onclick="toggleNav(this);">
@@ -42,7 +43,7 @@
       <div class="col-10">
         <div class="logo">
           <a href="index.html">
-          <img src="image/logo.png" alt="Ana Mikaela">
+            <img src="image/logo.png" alt="Ana Mikaela">
           </a>
         </div>
       </div>
@@ -53,7 +54,35 @@
       <div class="col-1">
       </div>
       <div class="col-10">
-        <form action=""></form>
+        <div class="row">
+          <div class="col-6">
+            <div style="position: relative; height: 560px;">
+              <img src="image/imagem-mika.jpg" alt="Sobre mim" class="imagem-mika">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="texto">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tincidunt ipsum. Integer pharetra
+                metus ut ante laoreet, ac ullamcorper libero ultrices. Suspendisse vulputate nulla vel urna lobortis
+                aliquet. Aliquam ornare ultricies ornare. Praesent in sollicitudin arcu, sit amet gravida sapien.
+                Integer eu massa a quam bibendum varius. Morbi augue risus, porttitor nec tempor id, iaculis vehicula
+                ex. Integer efficitur sit amet tellus quis condimentum. Vivamus iaculis, tellus et feugiat efficitur,
+                augue arcu malesuada justo, a efficitur velit sem a nibh.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="formulario">
+          <h1 style="text-align: center; color: white;">FALE COMIGO</h1>
+          <form action="/action_page.php">
+            <input type="text" id="fname" name="nome" placeholder="Nome">
+            <input type="text" id="email" name="email" placeholder="E-mail">
+            <input type="text" id="fone" name="telefone" placeholder="(00) 0000.0000">
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço">
+            <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem">
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
       </div>
     </div>
   </div>

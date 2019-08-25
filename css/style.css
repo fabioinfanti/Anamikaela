@@ -92,3 +92,38 @@ body{
  .carousel-inner img {
   width: 100%;
  }
+
+ .formulario{
+  padding: 20px;
+  text-align: center;
+ }
+
+ input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  background: none; 
+  border: none;
+  border-bottom: 2px solid #111;
+  color: White;
+}
+
+input[type=text]:hover{
+  border-bottom: 2px solid #444;
+}
+
+input[type=submit] {
+  width: 70%;
+  background-color: #111;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #222;
+}
