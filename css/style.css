@@ -8,6 +8,10 @@ body{
 }
 
 .sidenav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
     height: 100%;
     width: 0;
     position: fixed;
@@ -99,7 +103,7 @@ body{
  }
 
  input[type=text], select {
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -114,7 +118,7 @@ input[type=text]:hover{
 }
 
 input[type=submit] {
-  width: 70%;
+  width: 100%;
   background-color: #111;
   color: white;
   padding: 14px 20px;
@@ -133,3 +137,41 @@ input[type=submit]:hover {
   padding-top: 50px;
   position: relative;
   right: 20;
+}
+
+.sidenav-link{
+  flex: 1;
+}
+
+.sidenav-social{
+  padding-bottom: 50px;
+}
+
+
+.icones-sociais{  
+  text-align: center;
+  padding-left: 25px;
+}
+ 
+.icones-sociais li {
+    display: inline-block;
+}
+ 
+.icones-sociais a {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
+ 
+.instagram {
+    background-image: url(../image/insta.png);
+}
+ 
+.facebook {
+    background-image: url(../image/face.png);
+}
+ 
+.flickr {
+     background-image: url(../image/flickr.png);
+}
