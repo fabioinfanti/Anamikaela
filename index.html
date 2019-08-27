@@ -5,51 +5,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="nav" style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99;"> 
+  <div class="nav"
+    style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99;">
     <div class="container">
-        <div class="row" tag="cabecalho">
-          <div class="col-1">
-            <div id="mySidenav" class="sidenav">
-              <a href="index.html">Home</a>
-              <a href="#">Retratos</a>
-              <a href="#">Urbanos</a>
-              <a href="Contato.html">Contato</a>
-              <a href="Sobre Mim.html">Sobre Mim</a>
-            </div>
-            <div id="main"
-              style="margin-left: 0px; display: block; position: relative; left: 0px; color: white;z-index:99999">
-              <div class="btn-menu" onclick="toggleNav(this);">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </div>
-            <script>
-              function toggleNav(x) {
-                document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
-                document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
-                x.classList.toggle("change");
-              }
-            </script>
+      <div class="row" tag="cabecalho">
+        <div class="col-1">
+          <div id="mySidenav" class="sidenav">
+            <div class="sidenav-link">
+            <a href="index.html">Home</a>
+            <a href="#">Retratos</a>
+            <a href="#">Urbanos</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Sobre Mim.html">Sobre Mim</a>
           </div>
-          <div class="col-10">
-            <div class="logo">
-              <a href="index.html">
-              <img src="image/logo.png" alt="Ana Mikaela">
-              </a>
+          <div class="sidenav-social">
+            <a href="#">AMV PROD.</a>
+            <nav>
+              <ul class="icones-sociais">
+                  <li>
+                      <a href="#" class="instagram">
+                          Instagram
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="facebook">
+                          Facebook
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flickr">
+                        Flickr
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+         </div>
+            
+          </div>
+          <div id="main"
+            style="margin-left: 0px; display: block; position: relative; left: 0px; color: white;z-index:99999">
+            <div class="btn-menu" onclick="toggleNav(this);">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
+          </div>
+          <script>
+            function toggleNav(x) {
+              document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
+              document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
+              x.classList.toggle("change");
+            }
+          </script>
+        </div>
+        <div class="col-10">
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo.png" alt="Ana Mikaela">
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  
   <div id="demo" class="carousel slide" data-ride="carousel">
 
       <!-- Indicators -->
@@ -59,7 +84,7 @@
         <li data-target="#demo" data-slide-to="2"></li>
       </ul>
       <!-- The slideshow -->
-  <div class="carousel-inner">
+    <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="image/1.jpg" alt="Los Angeles" width="100%">
       </div>
@@ -71,13 +96,18 @@
       </div>
     </div>
     <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </a>
     <a class="carousel-control-next" href="#demo" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
 </body>
 
 </html>

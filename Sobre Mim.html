@@ -12,43 +12,69 @@
 </head>
 
 <body>
-  <div class="nav" style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background-color: #333;"> 
+  <div class="nav"
+    style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background-color: #333;">
     <div class="container">
-        <div class="row" tag="cabecalho">
-          <div class="col-1">
-            <div id="mySidenav" class="sidenav">
-              <a href="index.html">Home</a>
-              <a href="#">Retratos</a>
-              <a href="#">Urbanos</a>
-              <a href="Contato.html">Contato</a>
-              <a href="Sobre Mim.html">Sobre Mim</a>
-            </div>
-            <div id="main"
-              style="margin-left: 0px; display: block; position: relative; left: 0px; color: white;z-index:99999">
-              <div class="btn-menu" onclick="toggleNav(this);">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </div>
-            <script>
-              function toggleNav(x) {
-                document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
-                document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
-                x.classList.toggle("change");
-              }
-            </script>
+      <div class="row" tag="cabecalho">
+        <div class="col-1">
+          <div id="mySidenav" class="sidenav">
+            <div class="sidenav-link">
+            <a href="index.html">Home</a>
+            <a href="#">Retratos</a>
+            <a href="#">Urbanos</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Sobre Mim.html">Sobre Mim</a>
           </div>
-          <div class="col-10">
-            <div class="logo">
-              <a href="index.html">
-              <img src="image/logo.png" alt="Ana Mikaela">
-              </a>
+          <div class="sidenav-social">
+            <a href="#">AMV PROD.</a>
+            <nav>
+              <ul class="icones-sociais">
+                  <li>
+                      <a href="#" class="instagram">
+                          Instagram
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="facebook">
+                          Facebook
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flickr">
+                        Flickr
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+         </div>
+            
+          </div>
+          <div id="main"
+            style="margin-left: 0px; display: block; position: relative; left: 0px; color: white;z-index:99999">
+            <div class="btn-menu" onclick="toggleNav(this);">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
+          </div>
+          <script>
+            function toggleNav(x) {
+              document.getElementById("mySidenav").style.width = document.getElementById("mySidenav").style.width === "100%" ? '' : "100%";
+              document.getElementById("main").style.width = document.getElementById("main").style.marginLeft === "250px" ? '' : "250px";
+              x.classList.toggle("change");
+            }
+          </script>
+        </div>
+        <div class="col-10">
+          <div class="logo">
+            <a href="index.html">
+              <img src="image/logo.png" alt="Ana Mikaela">
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
   <div class="container" style="position: relative; top: 100px;">
     <div class="row">
       <div class="col-1">

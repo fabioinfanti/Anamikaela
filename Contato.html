@@ -18,11 +18,36 @@
       <div class="row" tag="cabecalho">
         <div class="col-1">
           <div id="mySidenav" class="sidenav">
+            <div class="sidenav-link">
             <a href="index.html">Home</a>
             <a href="#">Retratos</a>
             <a href="#">Urbanos</a>
             <a href="Contato.html">Contato</a>
             <a href="Sobre Mim.html">Sobre Mim</a>
+          </div>
+          <div class="sidenav-social">
+            <a href="#">AMV PROD.</a>
+            <nav>
+              <ul class="icones-sociais">
+                  <li>
+                      <a href="#" class="instagram">
+                          Instagram
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="facebook">
+                          Facebook
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="flickr">
+                        Flickr
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+         </div>
+            
           </div>
           <div id="main"
             style="margin-left: 0px; display: block; position: relative; left: 0px; color: white;z-index:99999">
@@ -57,12 +82,12 @@
       </div>
       <div class="col-10">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div style="position: relative; height: 350px;">
               <img src="image/imagem-mika2.jpg" alt="Sobre mim" class="imagem-mika2">
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div class="texto">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tincidunt ipsum. Integer pharetra
                 metus ut ante laoreet, ac ullamcorper libero ultrices. Suspendisse vulputate nulla vel urna lobortis
@@ -76,7 +101,7 @@
         </div>
         <div class="formulario">
           <h1 style="text-align: center; color: white;">FALE COMIGO</h1>
-          <form action="/action_page.php">
+          <form name="contato.html" method="POST"action="php/formulario.php">
             <input type="text" id="fname" name="nome" placeholder="Nome">
             <input type="text" id="email" name="email" placeholder="E-mail">
             <input type="text" id="fone" name="telefone" placeholder="(00) 0000.0000">
