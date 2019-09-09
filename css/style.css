@@ -5,6 +5,14 @@ body{
 
 .logo{
   text-align: center;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo img{
+    width: 160px;
+    margin-top: 10px;
+  }
 }
 
 .sidenav {
@@ -135,7 +143,6 @@ input[type=submit]:hover {
 .imagem-mika2{
   width: 100%;
   padding-top: 50px;
-  position: relative;
   right: 20;
 }
 
