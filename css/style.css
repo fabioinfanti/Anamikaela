@@ -199,3 +199,28 @@ input[type=submit]:hover {
   background-size: cover;
   height: 100%;
 }
+
+.galeria-lateral{
+  height: 460px;
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+.galeria-lateral img{
+  height: 60%;
+  padding-right: 40px;  
+  transition: height 1s ease-in-out ;
+}
+
+.galeria-lateral img:hover{
+  height: 70%;
+  transition: height 1s ease-in-out;
+}
+
+p {
+  text-align: justify;
+}

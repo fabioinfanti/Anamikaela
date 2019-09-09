@@ -4,22 +4,24 @@
   <title>Ana Mikaela - Portfólio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
+  
 </head>
 
 <body>
   <div class="nav"
-    style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99;">
+    style="width: 100%; position: fixed; top: 0; left: 0; width: 100%; z-index: 99; background-color: #333;">
     <div class="container">
       <div class="row" tag="cabecalho">
         <div class="col-1">
           <div id="mySidenav" class="sidenav">
             <div class="sidenav-link">
             <a href="index.html">Home</a>
-            <a href="Retrato.html">Retratos</a>
+            <a href="#">Retratos</a>
             <a href="#">Urbanos</a>
             <a href="Contato.html">Contato</a>
             <a href="Sobre Mim.html">Sobre Mim</a>
@@ -74,40 +76,33 @@
       </div>
     </div>
   </div>
-  
-  <div id="demo" class="carousel slide" data-pause="false" data-ride="carousel" data-interval="3000">
-
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>
-      <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="img-1"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="img-2"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="img-3"></div>
+  <div style="position: relative;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <div class="galeria-lateral">
+            <img src="image/lens-1209823_960_720.jpg" alt="">
+            <img src="image/photographer-407068_960_720.jpg" alt="">
+            <img src="image/landscape-4347888_960_720.jpg" alt="">
+          </div>
       </div>
     </div>
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function () {
+    $('.galeria-lateral').bind('mousewheel', function(event, delta) {
+    event.preventDefault();
+    var animate_scroll = 20; //Tempo em ms de animação no scroll
+    var delta = event.originalEvent.wheelDelta;
+    delta = -delta; //DIREÇÃO (Comentando a essa linha muda a direção)
+    var pos = $('.galeria-lateral').scrollLeft() + delta;
+    $('.galeria-lateral').animate({scrollLeft: pos}, animate_scroll);
+});
+    });
+</script>
 </body>
 
 </html>
