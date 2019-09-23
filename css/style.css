@@ -216,6 +216,11 @@ input[type=submit]:hover {
   padding-left: 0px;
   overflow: hidden;
 }
+@media (max-width: 769px) {
+  .galeria-lateral{
+    overflow-x: scroll;
+  }
+}
 
 .galeria-lateral img{
   height: 60%;
